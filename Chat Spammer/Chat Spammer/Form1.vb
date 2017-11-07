@@ -54,6 +54,6 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        MsgBox("Versione: 0.1", MsgBoxStyle.Information)
+        MsgBox("Versione: 0.2", MsgBoxStyle.Information)
     End Sub
 End Class

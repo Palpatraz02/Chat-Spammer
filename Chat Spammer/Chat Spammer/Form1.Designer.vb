@@ -39,9 +39,10 @@ Partial Class Form1
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 157)
+        Me.ProgressBar1.Location = New System.Drawing.Point(9, 128)
+        Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(100, 23)
+        Me.ProgressBar1.Size = New System.Drawing.Size(75, 19)
         Me.ProgressBar1.TabIndex = 0
         '
         'Timer1
@@ -52,9 +53,10 @@ Partial Class Form1
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(22, 101)
+        Me.Button1.Location = New System.Drawing.Point(16, 82)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 40)
+        Me.Button1.Size = New System.Drawing.Size(56, 32)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Avvia"
         Me.Button1.UseVisualStyleBackColor = False
@@ -63,9 +65,10 @@ Partial Class Form1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.Black
         Me.TextBox1.ForeColor = System.Drawing.Color.Lime
-        Me.TextBox1.Location = New System.Drawing.Point(214, 6)
+        Me.TextBox1.Location = New System.Drawing.Point(160, 5)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(125, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(95, 20)
         Me.TextBox1.TabIndex = 2
         Me.TextBox1.Text = "10"
         '
@@ -76,9 +79,10 @@ Partial Class Form1
         '
         Me.TextBox2.BackColor = System.Drawing.Color.Black
         Me.TextBox2.ForeColor = System.Drawing.Color.Lime
-        Me.TextBox2.Location = New System.Drawing.Point(80, 38)
+        Me.TextBox2.Location = New System.Drawing.Point(60, 31)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(76, 20)
         Me.TextBox2.TabIndex = 3
         Me.TextBox2.Text = "100"
         '
@@ -87,9 +91,10 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Black
         Me.Label1.ForeColor = System.Drawing.Color.Lime
-        Me.Label1.Location = New System.Drawing.Point(9, 9)
+        Me.Label1.Location = New System.Drawing.Point(7, 7)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(199, 17)
+        Me.Label1.Size = New System.Drawing.Size(148, 13)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Numero di messagi da inviare "
         '
@@ -98,9 +103,10 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Black
         Me.Label2.ForeColor = System.Drawing.Color.Lime
-        Me.Label2.Location = New System.Drawing.Point(9, 37)
+        Me.Label2.Location = New System.Drawing.Point(7, 30)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 17)
+        Me.Label2.Size = New System.Drawing.Size(50, 13)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Intervallo"
         '
@@ -108,10 +114,11 @@ Partial Class Form1
         '
         Me.TextBox3.BackColor = System.Drawing.Color.Black
         Me.TextBox3.ForeColor = System.Drawing.Color.Lime
-        Me.TextBox3.Location = New System.Drawing.Point(123, 66)
+        Me.TextBox3.Location = New System.Drawing.Point(92, 54)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(216, 114)
+        Me.TextBox3.Size = New System.Drawing.Size(163, 93)
         Me.TextBox3.TabIndex = 6
         Me.TextBox3.Text = "Chat Spammer"
         '
@@ -120,9 +127,10 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Black
         Me.Label3.ForeColor = System.Drawing.Color.Lime
-        Me.Label3.Location = New System.Drawing.Point(9, 69)
+        Me.Label3.Location = New System.Drawing.Point(7, 56)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 17)
+        Me.Label3.Size = New System.Drawing.Size(82, 13)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Testo Messaggi"
         '
@@ -131,19 +139,20 @@ Partial Class Form1
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(316, 37)
+        Me.Button2.Location = New System.Drawing.Point(237, 30)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(23, 23)
+        Me.Button2.Size = New System.Drawing.Size(17, 19)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "i"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(358, 193)
+        Me.ClientSize = New System.Drawing.Size(268, 157)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox3)
@@ -154,8 +163,12 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ProgressBar1)
         Me.ForeColor = System.Drawing.Color.Lime
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MaximizeBox = False
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Chat Spammer"
         Me.ResumeLayout(False)
         Me.PerformLayout()
