@@ -1,14 +1,10 @@
 ﻿Public Class Form1
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ProgressBar1.Value = ProgressBar1.Value + 2
-        If ProgressBar1.Value = 100 And Me.Enabled = False Then
+        If ProgressBar1.Value = 100 Then
             ProgressBar1.Value = 0
             Timer1.Stop()
             Timer2.Start()
-        ElseIf ProgressBar1.Value = 100 And Me.Enabled = True Then
-            ProgressBar1.Value = 0
-            Timer1.Stop()
-            MsgBox("Casella di testo non rilevata!", MsgBoxStyle.Critical)
         End If
     End Sub
 
@@ -58,6 +54,6 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        MsgBox("Versione: 0.3", MsgBoxStyle.Information)
+        MsgBox("Versione: 0.4", MsgBoxStyle.Information)
     End Sub
 End Class
