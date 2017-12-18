@@ -4,6 +4,7 @@
         If ProgressBar1.Value = 100 Then
             ProgressBar1.Value = 0
             Timer1.Stop()
+            Form2.Show()
             Timer2.Start()
         End If
     End Sub
@@ -27,6 +28,7 @@
                 My.Settings.start = False
             End Try
             If My.Settings.start = True Then
+                MsgBox("LEGGI LE AVVERTENZE PREMENDO SU INFO", MsgBoxStyle.Exclamation)
                 MsgBox("Hai 5 secondi per selezionare la chat dove scrivere", MsgBoxStyle.Exclamation)
                 My.Settings.start = True
                 Timer1.Start()
@@ -38,6 +40,7 @@
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         If My.Settings.num1 = My.Settings.num Then
             Timer2.Stop()
+            Form2.Close()
         Else
             SendKeys.Send(TextBox3.Text)
             SendKeys.Send("{ENTER}")
@@ -54,6 +57,10 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        MsgBox("Versione: 0.4", MsgBoxStyle.Information)
+        MsgBox("Non esagerare con i messaggi, rischi di impallare il PC. Imposta un intervallo corretto. Versione 0.5", MsgBoxStyle.Information)
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
     End Sub
 End Class
