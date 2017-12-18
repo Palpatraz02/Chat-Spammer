@@ -10,3 +10,7 @@ v 0.3
 
 v. 0.4
 - Corretto Bug che impediva di avviare lo spammer (rimozione della funzionalità aggiunta nella 0.3)
+
+v. 0.5
+- Interfaccia grafica rivista
+- Aggiunta opzione per l'annullamento della scrittura dei messagi prima di aver ragiunto il limite impostato
