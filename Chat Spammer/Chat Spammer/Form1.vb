@@ -57,7 +57,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        MsgBox("Non esagerare con i messaggi, rischi di impallare il PC. Imposta un intervallo corretto. Versione 0.5", MsgBoxStyle.Information)
+        MsgBox("Non esagerare con i messaggi, rischi di impallare il PC. Imposta un intervallo corretto. Versione 0.6 UWP", MsgBoxStyle.Information)
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged

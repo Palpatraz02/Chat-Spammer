@@ -9,10 +9,10 @@ Imports System.Runtime.InteropServices
 ' Controllare i valori degli attributi degli assembly
 
 <Assembly: AssemblyTitle("Chat Spammer")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("A Chat Spammer Open-Source (works on Windows 10 S or S Mode)")>
+<Assembly: AssemblyCompany("Pierre02 & Palpatraz02")>
 <Assembly: AssemblyProduct("Chat Spammer")>
-<Assembly: AssemblyCopyright("Copyright ©  2017")>
+<Assembly: AssemblyCopyright("Copyright ©  2018")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' usando l'asterisco '*' come illustrato di seguito:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("0.2.0.0")>
-<Assembly: AssemblyFileVersion("0.2.0.0")>
+<Assembly: AssemblyVersion("0.6.0.0")>
+<Assembly: AssemblyFileVersion("0.6.0.0")>

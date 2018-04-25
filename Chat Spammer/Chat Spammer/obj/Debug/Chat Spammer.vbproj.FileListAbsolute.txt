@@ -61,3 +61,16 @@ C:\Users\Fabien Dufour\OneDrive\Sorgenti vari\Chat Spammer\Chat Spammer\obj\Debu
 C:\Users\Fabien Dufour\OneDrive\Sorgenti vari\Chat Spammer\Chat Spammer\obj\Debug\Chat Spammer.exe
 C:\Users\Fabien Dufour\OneDrive\Sorgenti vari\Chat Spammer\Chat Spammer\obj\Debug\Chat Spammer.xml
 C:\Users\Fabien Dufour\OneDrive\Sorgenti vari\Chat Spammer\Chat Spammer\obj\Debug\Chat Spammer.pdb
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\bin\Debug\Chat Spammer.exe.config
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\bin\Debug\Chat Spammer.exe
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\bin\Debug\Chat Spammer.pdb
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\bin\Debug\Chat Spammer.xml
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\obj\Debug\Chat Spammer.vbprojResolveAssemblyReference.cache
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\obj\Debug\Chat_Spammer.Form1.resources
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\obj\Debug\Chat_Spammer.Form2.resources
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\obj\Debug\Chat_Spammer.Resources.resources
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\obj\Debug\Chat Spammer.vbproj.GenerateResource.Cache
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\obj\Debug\Chat Spammer.vbproj.CoreCompileInputs.cache
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\obj\Debug\Chat Spammer.exe
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\obj\Debug\Chat Spammer.xml
+C:\Users\vicqu\OneDrive\Sorgenti vari\Visual Basic\Chat Spammer\Chat Spammer\obj\Debug\Chat Spammer.pdb
