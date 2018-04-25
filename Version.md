@@ -14,3 +14,6 @@ v. 0.4
 v. 0.5
 - Interfaccia grafica rivista
 - Aggiunta opzione per l'annullamento della scrittura dei messagi prima di aver ragiunto il limite impostato
+
+v. 0.6 UWP
+- Supporto a Windows 10 S e S Mode
