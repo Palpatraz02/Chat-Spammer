@@ -17,3 +17,9 @@ v. 0.5
 
 v. 0.6 UWP
 - Supporto a Windows 10 S e S Mode
+
+v. 0.7 UWP
+- Supporto a Windows 10 April 2018 Update (10.0.17134.1)
+- Aggiornamento lingua per DAC
+- Aggiornamento certificato sviluppatore
+- Aggiornamento script installer
