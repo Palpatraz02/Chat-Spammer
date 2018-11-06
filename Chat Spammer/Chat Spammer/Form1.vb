@@ -10,25 +10,27 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ProgressBar1.Visible = True
+        Button1.Visible = False
+
         My.Settings.num1 = 0
         My.Settings.num = 1
-        If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Then
-            MsgBox("Compilare tutti i campi", MsgBoxStyle.Exclamation)
+        If TextBox3.Text = "" Then
+            MsgBox("Testo vuoto", MsgBoxStyle.Exclamation)
         Else
             Try
-                My.Settings.num = TextBox1.Text
+                My.Settings.num = NumericUpDown2.Value
             Catch
-                MsgBox("Carattere inserito non valido", MsgBoxStyle.Exclamation)
-                My.Settings.start = False
+                MsgBox("Problema con il numero di messaggi", MsgBoxStyle.Critical)
             End Try
+
             Try
-                Timer2.Interval = TextBox2.Text
+                Timer2.Interval = NumericUpDown1.Value
             Catch
-                MsgBox("Carattere inserito non valido", MsgBoxStyle.Exclamation)
-                My.Settings.start = False
+                MsgBox("Problema con l'intervallo", MsgBoxStyle.Critical)
             End Try
+
             If My.Settings.start = True Then
-                MsgBox("LEGGI LE AVVERTENZE PREMENDO SU INFO", MsgBoxStyle.Exclamation)
                 MsgBox("Hai 5 secondi per selezionare la chat dove scrivere", MsgBoxStyle.Exclamation)
                 My.Settings.start = True
                 Timer1.Start()
@@ -41,10 +43,12 @@
         If My.Settings.num1 = My.Settings.num Then
             Timer2.Stop()
             Form2.Close()
+            Button1.Visible = True
         Else
             SendKeys.Send(TextBox3.Text)
             SendKeys.Send("{ENTER}")
             My.Settings.num1 = My.Settings.num1 + 1
+            ProgressBar1.Visible = False
         End If
 
     End Sub
@@ -57,10 +61,20 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        MsgBox("Non esagerare con i messaggi, rischi di impallare il PC. Imposta un intervallo corretto. Versione 0.7 UWP", MsgBoxStyle.Information)
+        Form3.Show()
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
+        If NumericUpDown1.Value <= 0 Then
+            MsgBox("Valore non valido", MsgBoxStyle.Exclamation)
+            NumericUpDown1.Value = 100
+        End If
+    End Sub
 
+    Private Sub NumericUpDown2_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown2.ValueChanged
+        If NumericUpDown2.Value <= 0 Then
+            MsgBox("Valore non valido", MsgBoxStyle.Exclamation)
+            NumericUpDown2.Value = 100
+        End If
     End Sub
 End Class
