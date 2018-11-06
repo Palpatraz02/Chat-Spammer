@@ -1,34 +1,50 @@
 @echo off
 @setlocal enableextensions
 @cd /d "%~dp0
-echo ====================================================
-echo         Chat Spammer Universal Windows App
-echo ====================================================
-echo                 Versione 0.7 UWP
-echo.
-
-    echo Permessu di amministratore richiesti. Controllo permessi...
 
     net session >nul 2>&1
     if %errorLevel% == 0 (
-		color 0a
-		echo.
-        echo Fatto: Permessi di amministratore confermati
+		set admin=true
 		goto menu
     ) else (
-		color 0c
-		echo.
-        echo Fallito: Permessi correnti inadeguati
-		pause
-		exit
+		set admin=false
+		goto menulite
     )
 	
+	
 :menu
-echo 1) Installa il certificato e l'app
-echo 2) Installa o aggiorna l'app
+color 0a
+echo ====================================================
+echo         Chat Spammer Universal Windows App
+echo ====================================================
+echo                 Versione 0.8 UWP
+echo.
+echo.
+echo Fatto: Permessi di amministratore confermati
+echo.
+echo 1) Installa o aggiorna l'app
+echo 2) Installa o aggiorna il certificato
+echo.
 set /p sel=Digita la tua scelta: 
-if %sel% equ 1 goto cert
-if %sel% equ 2 goto app
+if %sel% equ 1 goto app
+if %sel% equ 2 goto cert
+
+:menulite
+color 0c
+echo ====================================================
+echo         Chat Spammer Universal Windows App
+echo ====================================================
+echo                 Versione 0.8 UWP
+echo.
+echo.
+echo Fallito: Permessi correnti inadeguati
+echo Per installare o aggiornare il certificato, esegui l'installer come amministratore
+echo.
+echo 1) Installa o aggiorna l'app
+echo.
+set /p sel=Digita la tua scelta: 
+if %sel% equ 1 goto app
+
 
 :cert
 		echo.
@@ -36,7 +52,11 @@ if %sel% equ 2 goto app
 		echo Installo il certificato per far funzionare l'app...
 		echo.
 		Certutil -addStore TrustedPeople Pierre02_Palpatraz02.cer
-		start ChatSpammerUWP.appx
-		exit
+		cls
+		if %admin% equ true goto menu
+		if %admin% equ false goto menulite
 :app
-		start ChatSpammerUWP.appx
+		start ChatSpammerUWP_0.8.appx
+		cls
+		if %admin% equ true goto menu
+		if %admin% equ false goto menulite
